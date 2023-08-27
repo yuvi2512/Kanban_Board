@@ -1,0 +1,137 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the whole application */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #2d4059;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Main content container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Task form */
+.task-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.task-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.task-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Task table */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-table th, .task-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Edit and Delete buttons */
+.edit-button, .delete-button {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.edit-button {
+  color: #007bff;
+}
+
+.delete-button {
+  color: #e74c3c;
+}
+
+/* Stylish card-like appearance for task cards */
+.task-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form input[type="text"] {
+    margin-bottom: 10px;
+  }
+  
+  .add-button, .update-button, .cancel-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 900;
+}
