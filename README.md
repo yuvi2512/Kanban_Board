@@ -7,7 +7,6 @@ A simple task management application inspired by platforms like Trello. This app
 - Add new tasks with titles and descriptions.
 - Edit existing tasks' titles and descriptions.
 - Delete tasks permanently.
-- Drag and drop tasks between different status groups: To Do, Doing, Done.
 - Responsive design for seamless usage on various devices.
 
 ## Technologies Used
@@ -15,7 +14,6 @@ A simple task management application inspired by platforms like Trello. This app
 - Frontend: React
 - Backend: Node.js, Express, MongoDB
 - Styling: CSS
-- HTTP Client: axios
 
 ## Getting Started
 
